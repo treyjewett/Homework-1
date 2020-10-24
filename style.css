@@ -8,6 +8,8 @@ body {
     background-color: #d9dcd6;
 }
 
+/* This sets the header design to be readable with pleasant font. The background is dark with
+light text. There is also a light "padding" of 20px to give the header a larger look. */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -20,10 +22,13 @@ body {
     font-size: 48px;
 }
 
+/* This is specefic to the "seo" in the header space. The color is slightly different for contrast
+to highlight the company's name. */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/* Float right sets the element in the <div> parent to the right side of the page. */
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -36,16 +41,22 @@ body {
     list-style-type: none;
 }
 
+/* Indenting the list items 25px. This places them farther to the right of the page making the header
+look larger and easier to read. */
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* This sets the text color to white and removes all text decoration to make it appear as plain text. */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* This class is solely to format the background photo for the website. The height is large making the
+photo a bold statement and very appealing to the eye. The width is the entire page and the picture is
+centered. */
 .hero {
     height: 1200px;
     width: 100%;
@@ -55,12 +66,17 @@ a {
     background-position: center;
 }
 
+/* This gives the content 75% of the page width to use. This is important to make sure the content
+on the right side of the page has enough room to be readable. */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* This formatts the main talking points on the page. The margin is what separates one talking point
+from the other. 20px is a small break, but enough to separate one idea from the other. The height is
+universal between the three talking points which makes this section look appealing to the viewer. */
 .horizontal-block {
     margin-bottom: 20px;
     padding: 50px;
@@ -70,35 +86,48 @@ a {
     color: #ffffff;
 }
 
+/* This sets the max height of the image to 200px. Without this, the images in the main talking points
+are almost as large as the "hero" image that serves as the large eye-catching front. */
 .horizontal-block img {
     max-height: 200px;
 }
 
+/* The margin here separates the header from the information provided below, making it easier
+to read. */
 .horizontal-block h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* This sets the font size for all <p> elements to 16px. */
 p {
     font-size: 16px;
 }
 
+/* Float-left ensures that the photos contained within the talking points set to the right will not
+interfere with readablity by setting them to the left side of the box.SS */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* Float-right ensures that the photos contained within the talking points set to the left will not
+interfere with readablity by setting them to the right side of the box.SS */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* This sets the quick talking points to the right side of the page. The float from the photos
+in the main talking points is cleared to allow for a new float rule for the entire block. The width
+is set to 21% to allow a 4% margin between the main talking points and this block on the right. The
+height is set to 100% to allow for the column-style of this block. */
 .benefits {
     margin-right: 20px;
     padding: 20px;
     clear: both;
     float: right;
-    width: 20%;
+    width: 21%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 32px;
@@ -106,22 +135,24 @@ p {
     background-color: #2589bd;
 }
 
-.benefits h3 {
+/* This sets the header to a max width of 170px to fit within the 20% with of the parent ".benefits".
+The margin is set to 10 all around to give a little room on every side so the margin stands out. The
+img has the same formatting so that it fits seamlessly along with the header. */
+.benefits h3, img {
     display: block;
     margin: 10px auto;
-    max-width: 150px;
+    max-width: 170px;
 }
 
-.benefits img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
+/* The <p> element is given a bottom margin of 30px to allow adequate spacing between the description
+and the next topic. Without it, the right hand block would be much shorter than the rest of the page
+and look very odd. */
 .benefits p {
     margin-bottom: 30px;
 }
 
+/* Padding is given to make the footer look similar to the header in terms of design. Both of the
+float properties are cleared which allows for the centering of the text afterwards. */
 .footer {
     padding: 30px;
     clear: both;
@@ -129,6 +160,8 @@ p {
     text-align: center;
 }
 
+/* The font size is set to 20px because the footer is not meant to bring a lot of attentin to the
+reader. This is usually reserved for copyright licenses and other credentials. */
 .footer h2 {
     font-size: 20px;
 }
